@@ -52,6 +52,11 @@ optional arguments:
 
 ## Example
 ```
+# rabbitmqctl add_user test test
+Creating user "test" ...
+# rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
+Setting permissions for user "test" in vhost "/" ...
+
 $ ./send.py -u test -p test 10.130.236.20 10.130.236.33 10.130.236.234
 Connecting to 10.130.236.20(0)...
 ^C
